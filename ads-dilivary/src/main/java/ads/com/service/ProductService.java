@@ -7,6 +7,8 @@ import ads.com.response.ProductResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ProductService {
     @Autowired
@@ -25,4 +27,7 @@ public class ProductService {
        return productResponse;
     }
 
+    public List<ProductResponse> findAllProducts() {
+        return null;
+    }
 }
